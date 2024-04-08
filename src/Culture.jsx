@@ -1,4 +1,4 @@
-import './css/Culture.css';
+// import './css/Culture.css';
 import React from 'react';
 import image1 from './images/cultures/dragon.png';
 import image2 from './images/cultures/midAutumn.jpg';

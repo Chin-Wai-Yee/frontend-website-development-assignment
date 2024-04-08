@@ -1,4 +1,4 @@
-import './css/Ethinicity.css';
+// import './css/Ethinicity.css';
 import React from 'react';
 import TitleBoxWithBackground from './reuseComponent/TitleBoxWithBackground';
 import Typography from '@mui/material/Typography';

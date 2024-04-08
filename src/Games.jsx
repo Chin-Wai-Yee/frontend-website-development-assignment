@@ -1,4 +1,4 @@
-import './css/Game.css';
+// import './css/Game.css';
 
 import image1 from './images/games/batuseremban.jpg';
 import image2 from './images/games/galahpanjang.jpeg';
