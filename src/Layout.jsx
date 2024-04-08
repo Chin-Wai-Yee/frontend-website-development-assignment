@@ -5,7 +5,7 @@ import {
   ThemeProvider,
 } from '@mui/material/styles';
 import DrawerAppBar from "./reuseComponent/DrawerAppBar";
-import ScrollTop from "./reuseComponent/ScrollTop";
+import ScrollTopButton from "./reuseComponent/ScrollTopButton";
 import Footer from "./Footer";
 
 const Layout = () => {
@@ -17,12 +17,13 @@ const Layout = () => {
   });
 
   theme = responsiveFontSizes(theme);
+  darkTheme = responsiveFontSizes(darkTheme);
 
   return (
     <>
-      <ThemeProvider theme={theme}>
+      <ThemeProvider theme={darkTheme}>
         <DrawerAppBar />
-        <ScrollTop />
+        <ScrollTopButton />
         <Outlet />
         <Footer />
       </ThemeProvider>

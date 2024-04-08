@@ -17,7 +17,7 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import Collapse from '@mui/material/Collapse';
 import IconButton from '@mui/material/IconButton';
 import Modal from '@mui/material/Modal';
-import Grid from '@mui/material/Grid';
+import Grid from '@mui/material/Unstable_Grid2';
 import Stack from '@mui/material/Stack';
 import Divider from '@mui/material/Divider';
 import { useTheme } from '@mui/material/styles';
@@ -58,7 +58,7 @@ function DescriptionModal(props) {
           />
         </Grid>
         <Grid xs={6} alignContent='center' padding={4} maxHeight='70vh'>
-          <Box maxHeight='100%' overflow='auto'>
+          <Box maxHeight='100%' overflow='auto' paddingRight='1rem'>
             <Stack marginLeft={-1} direction='row' marginBottom='2rem'>
               <IconButton onClick={props.onClose}>
                 <ArrowBackIcon/>

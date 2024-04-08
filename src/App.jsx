@@ -9,13 +9,15 @@ import Games from "./Games";
 import Food from "./Food";
 import Culture from "./Culture";
 import ContactUs from "./ContactUs";
-import "./App.css";
+import SignInSide from "./SignInSide";
+import ScrollToTop from "./reuseComponent/ScrollToTop";
 
 function App() {
   
   return (
 
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
@@ -25,6 +27,7 @@ function App() {
           <Route path="food" element={<Food />} />
           <Route path="culture" element={<Culture />} />
           <Route path="contact-us" element={<ContactUs />} />
+          <Route path="login" element={<SignInSide />}/>
         </Route>
       </Routes>
     </BrowserRouter>

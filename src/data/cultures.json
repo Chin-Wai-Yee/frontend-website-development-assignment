@@ -1,0 +1,74 @@
+[
+  {
+    "category": "Chinese",
+    "name": "Chinese New Year",
+    "image": "./images/cultures/dragon.png",
+    "description": [
+      "The Chinese New Year, a significant celebration for the Chinese community in Malaysia, has its roots in ancient legend. According to one story, a monster named Nian would terrorize villagers at the start of each new year. To ward off the monster, people discovered that it was afraid of loud noises, bright lights, and the color red. As a result, traditions for the Chinese New Year often include fireworks, firecrackers, and wearing red clothing and decorations. Additionally, it is customary to give young people money in red envelopes to bring luck and prosperity for the upcoming year."
+    ]
+  },
+  {
+    "category": "Chinese",
+    "name": "Mid-Autumn Festival",
+    "image": "./images/cultures/midAutumn.jpg",
+    "description": [
+      "The Mid-Autumn Festival, also known as the Moon Festival, is celebrated on the 15th day of the 8th month in the lunar calendar. This day is marked by a full moon, which the Chinese believe is at its brightest and fullest. The festival coincides with the harvest season in the middle of autumn. During this time, people adorn the streets with lanterns of various colors, sizes, and shapes, symbolizing hope and prosperity for the future. Mooncakes, a traditional pastry filled with bean paste, egg yolk, meat, or lotus seed paste, are a popular treat enjoyed during the festival. The origins of the Mid-Autumn Festival are rooted in the legend of Chang'e, the revered Moon goddess in Chinese mythology."
+    ]
+  },
+  {
+    "category": "Chinese",
+    "name": "Dragon Boat Festival",
+    "image": "./images/cultures/dragonBoat.jpg",
+    "description": [
+      "The Mid-Autumn Festival, as per a widely known legend in modern China, commemorates Qu Yuan, a poet and minister from the Chu state during the Warring States period of the Zhou dynasty. Qu Yuan drowned himself in the Miluo River out of despair, prompting locals to rush out in boats to rescue him or retrieve his body. This event is said to have led to the tradition of dragon boat races. Unable to find his body, they threw sticky rice balls into the river, hoping that the fish would eat them instead of Qu Yuan's remains. This is believed to be the origin of zongzi, a traditional food associated with the festival."
+    ]
+  },
+  {
+    "category": "Indian",
+    "name": "Deepavali",
+    "image": "./images/cultures/deepavali.jpg",
+    "description": [
+      "Deepavali, also called Diwali, is a beloved festival observed by Hindus and the Indian diaspora. Known as the \"Festival of Lights,\" it symbolizes the victory of light over darkness and good over evil. During this festival, homes, streets, and public areas are illuminated with oil lamps and colorful lights, creating a beautiful ambiance. Deepavali commemorates the return of Lord Rama, Sita, and Lakshmana to Ayodhya after defeating the demon king Ravana, as recounted in the epic Ramayana. It also honors Goddess Lakshmi, representing wealth and prosperity. Deepavali is a time for family gatherings, feasting, exchanging gifts, and spreading joy, fostering a sense of unity and rejuvenation within communities."
+    ]
+  },
+  {
+    "category": "Indian",
+    "name": "Thaipusam",
+    "image": "./images/cultures/thaipusam.jpg",
+    "description": [
+      "Thaipusam is a lively Hindu festival predominantly celebrated by the Tamil community. This annual event, usually held in January or February, honors Lord Murugan, the Hindu deity of war and victory. Devotees demonstrate their dedication and seek blessings through unique acts of penance, such as piercing their bodies with hooks and carrying elaborate kavadis (ornate structures). The festival is a vibrant and spiritual affair, attracting participants and spectators from both local and international communities. Thaipusam highlights the enduring faith, self-sacrifice, and communal unity, making it a captivating and spiritually fulfilling occasion."
+    ]
+  },
+  {
+    "category": "Indian",
+    "name": "Pongal",
+    "image": "./images/cultures/pongal.jpg",
+    "description": [
+      "Pongal is a significant harvest festival celebrated with enthusiasm by Tamil Hindus in Southern India, usually in January. This four-day festival celebrates the abundant harvest season and offers thanks to the sun god, Surya, and the farm animals crucial to agriculture. A key aspect of Pongal is the preparation of a special dish called \"Pongal,\" made with freshly harvested rice, jaggery, and other ingredients. Traditional music, dance, and colorful kolam (rangoli) decorations are integral parts of the festivities. Pongal symbolizes gratitude, unity, and the enduring agrarian traditions that have been central to Tamil culture for generations."
+    ]
+  },
+  {
+    "category": "Malay",
+    "name": "Hari Raya Aidilfitri",
+    "image": "./images/cultures/hariRayaAildilfirti.jpg",
+    "description": [
+      "Hari Raya Aidilfitri, also known as Eid al-Fitr, is a joyful and sacred celebration in Malay culture. It signifies the end of Ramadan, the Islamic month of fasting and reflection. Families gather to break their fast, attend mosque prayers, and exchange warm greetings. Colorful decorations adorn homes, and the tradition of giving and receiving gifts is cherished. This festival reflects the values of forgiveness, gratitude, and unity among Muslims, symbolizing the triumph of spiritual devotion over worldly desires."
+    ]
+  },
+  {
+    "category": "Malay",
+    "name": "Hari Raya Aidiladha",
+    "image": "./images/cultures/hariRayaHaji.jpg",
+    "description": [
+      "Hari Raya Aidiladha, also known as Eid al-Adha or the Festival of Sacrifice, is a significant event in Malay culture. It honors the willingness of Prophet Ibrahim (Abraham) to sacrifice his son Isma'il (Ishmael) as an act of obedience to God. Muslims throughout Malaysia participate in the Qurban ritual by sacrificing animals and sharing the meat with those in need, highlighting the importance of charity and empathy. This occasion is a time for spiritual contemplation, prayer, and fostering community unity."
+    ]
+  },
+  {
+    "category": "Malay",
+    "name": "Maulidur Rasul",
+    "image": "./images/cultures/rasul.jpg",
+    "description": [
+      "Maulidur Rasul, also known as Mawlid al-Nabi, is a significant celebration in Malay culture that honors the birth of Prophet Muhammad. This observance is marked with deep religious reverence and includes special lectures, processions, and gatherings where the life and teachings of the Prophet are remembered. Devotees recite poems and offer prayers, highlighting the importance of emulating the Prophet's values of compassion, kindness, and righteousness. The festival fosters a sense of spiritual rejuvenation and serves as a reminder of the profound impact of Prophet Muhammad's life on the Malay Muslim community."
+    ]
+  }
+]

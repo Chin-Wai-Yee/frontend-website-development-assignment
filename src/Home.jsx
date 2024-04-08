@@ -1,7 +1,7 @@
 import React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import Grid from '@mui/material/Grid';
+import Grid from '@mui/material/Unstable_Grid2';
 import Divider from '@mui/material/Divider';
 import TitleBoxWithBackground from './reuseComponent/TitleBoxWithBackground';
 import { Typewriter } from 'react-simple-typewriter';
