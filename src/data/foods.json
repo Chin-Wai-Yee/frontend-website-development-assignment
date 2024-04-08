@@ -1,0 +1,162 @@
+[
+  {
+    "title": "Dim Sum",
+    "category": "Chinese",
+    "image": "./images/foods/dimSum.jpg",
+    "description": [
+      "Dim sum is a traditional Chinese meal consisting of small, bite-sized portions of food served in steamer baskets or on small plates, often enjoyed with tea. Originating in Guangdong province, China, dim sum has become popular worldwide, including in Malaysia, for its variety, flavors, and communal dining experience. A typical dim sum menu offers a wide array of dishes, including dumplings, buns, rolls, and desserts, with popular items like siu mai, har gow, char siu bao, and cheong fun.",
+      "Dishes are usually small, allowing diners to sample a variety of flavors and textures. Dim sum is commonly served from morning to early afternoon and is a popular choice for breakfast or brunch, often enjoyed with family and friends. In Malaysia, dim sum restaurants are popular and offer a lively atmosphere where locals and tourists alike can enjoy the delicious food and social dining experience."
+    ]
+  },
+  {
+    "title": "Mapo Tofu",
+    "category": "Chinese",
+    "image": "./images/foods/mapoTofu.jpeg",
+    "description": [
+      "Mapo Tofu, originating from China's Sichuan province, has garnered a strong following in Malaysia, thanks to its rich and spicy flavors. This iconic dish features soft tofu cubes simmered in a fiery sauce made from chili paste, fermented black beans, garlic, and Sichuan peppercorns, offering a tantalizing combination of heat and numbing spice.",
+      "The dish's name, which translates to \"pockmarked old woman tofu,\" is said to honor its creator, whose facial scars gave her the nickname. Despite its humble origins, Mapo Tofu has become a culinary star, renowned for its complex flavors and comforting appeal. In Malaysia's diverse culinary landscape, this dish has found a welcome place, offering a flavorful and satisfying experience for those craving a taste of Sichuan cuisine."
+    ]
+  },
+  {
+    "title": "Dumpling",
+    "category": "Chinese",
+    "image": "./images/foods/dumpling.jpg",
+    "description": [
+      "Dumplings are a versatile and beloved food found in various cuisines worldwide, with each culture offering its own unique take on these delightful parcels of dough. In Chinese cuisine, dumplings are often made with a thin dough wrapper filled with a mixture of ground meat, vegetables, and seasonings, then either boiled, steamed, or fried. They are commonly enjoyed as part of celebratory meals, particularly during festivals like Chinese New Year, symbolizing wealth and prosperity due to their resemblance to ancient Chinese ingots.", 
+      "Japanese gyoza are a type of dumpling similar to Chinese jiaozi but are typically smaller and thinner, with a more delicate wrapper. In Korean cuisine, mandu are dumplings that can be steamed, boiled, pan-fried, or deep-fried, and are often filled with a mixture of minced meat, tofu, vegetables, and glass noodles."
+    ]
+  },
+  {
+    "title": "Hotpot",
+    "category": "Chinese",
+    "image": "./images/foods/hotpot.jpg",
+    "description": [
+      "Hot pot is a quintessential Chinese delicacy that transcends age barriers, revered not just for its culinary appeal but also for its cultural significance. It involves using a pot as both a cooking vessel and a communal dining experience, symbolizing togetherness and conviviality. Typically, a heat source is used to boil water or soup in the pot, where various ingredients like meats, seafood, vegetables, soy products, and more are cooked.", 
+      "The unique aspect of hot pot lies in its interactive dining style, where diners can cook and eat simultaneously, ensuring the food is piping hot and infused with the flavors of the soup. Diners often dip the cooked items in seasonings for added taste, enhancing the overall experience of this cherished culinary tradition."
+    ]
+  },
+  {
+    "title": "Bak Kut Teh",
+    "category": "Chinese",
+    "image": "./images/foods/bakKutTeh.jpeg",
+    "description": [
+      "Bak Kut Teh, meaning 'meat bone tea,' is a beloved dish originating from the Hokkien-speaking communities of Malaysia, Singapore, and parts of Indonesia. This hearty dish features pork ribs simmered in a flavorful broth made with garlic, pepper, cloves, star anise, and cinnamon, creating a complex and fragrant flavor profile. The name reflects the cooking method, where the ribs are simmered until tender, allowing the spices to infuse into the meat.", 
+      "Typically served with steamed white rice, youtiao (fried dough sticks), and chili paste, Bak Kut Teh is cherished for its comforting qualities, making it a popular choice, especially during cooler weather. It also holds cultural significance, often enjoyed during festivals and family gatherings, and has gained popularity beyond its place of origin, becoming a favorite comfort food for many around the world."
+    ]
+  },
+  {
+    "title": "Kung Pao Chicken",
+    "category": "Chinese",
+    "image": "./images/foods/kungPaoChicken.jpg",
+    "description": [
+      "Kung Pao chicken with a spicy lychee flavor, is a Sichuan-style dish that originated from Guizhou cuisine, spread to Shandong cuisine, and then became Sichuan cuisine. Guizhou, Shandong and Sichuan do not cook this dish exactly the same way, and the names are also different. Guizhou calls it spicy chicken, Shandong calls it stir-fried chicken, and Sichuan calls it kung pao chicken.", 
+      "Kung Pao Chicken is made of chicken as the main ingredient, with peanuts, peppers and other auxiliary ingredients; it is red but not spicy, hot but not strong, spicy and spicy, and the meat is smooth and crispy; its entrance is spicy and the chicken is tender Can be paired with the crunchiness of peanuts."
+    ]
+  },
+  {
+    "title": "Banana Leaf Rice",
+    "category": "Indian",
+    "image": "./images/foods/bananaLeafRice.jpg",
+    "description": [
+      "Banana leaf rice is a traditional Malaysian meal where rice, vegetables, pickles, and various curries are served on a banana leaf. The meal is typically eaten with your hands, adding a tactile and sensory element to the dining experience. The banana leaf is not just a serving vessel but also adds a subtle aroma and flavor to the rice.", 
+      "This communal style of dining is popular in South India as well, reflecting the cultural exchange between Malaysia and South India due to historical migration patterns. The meal is often accompanied by side dishes like fried fish, chicken, or mutton, adding to its richness and variety. Banana leaf rice is not only a delicious and satisfying meal but also a cultural experience that showcases the diverse culinary influences in Malaysia."
+    ]
+  },
+  {
+    "title": "Roti Canai",
+    "category": "Indian",
+    "image": "./images/foods/rotiCanai.jpg",
+    "description": [
+      "Roti means 'bread,' but here it refers to'pancake,' while canai means 'flattening back and forth,' describing the technique of the Indian pancake master who flattens, air-dries, and stretches the dough. Another theory suggests that canai originates from the Tamil word 'channal,' which means dough used for making pancakes. There's also a legend linking canai to Chennai, India, as many Indian pancake chefs who migrated to Malaysia during the gold mining era were from Chennai.", 
+      "In India and Singapore, Indian pancakes are known as 'prata,' sharing the same shape. Prata retains the round shape of Indian pancakes but is often square when filled, which is said to be easier to cook. In Malaysia, there are various flavors of roti canai, including Roti Kosong (plain), Roti Telur (egg), Roti Pisang (banana), Roti Planta (butter), and more, with different regions offering unique flavors."  
+    ]
+  },
+  {
+    "title": "Gulab Jamun",
+    "category": "Indian",
+    "image": "./images/foods/gulabJamun.jpeg",
+    "description": [
+      "Gulab jamun is a popular dessert in India and parts of Southeast Asia, including Malaysia, made from milk solids kneaded into a dough, shaped into small balls, and deep-fried until golden brown. The fried balls are then soaked in a sugar syrup flavored with cardamom, rose water, and saffron, giving them a sweet and aromatic taste.", 
+      "Gulab jamun is often served warm, either as a standalone dessert or as part of a larger meal, and is enjoyed during festivals, celebrations, and special occasions. The dessert is known for its rich, melt-in-your-mouth texture and indulgent sweetness, making it a favorite among those with a sweet tooth."
+    ]
+  },
+  {
+    "title": "Briyani",
+    "category": "Indian",
+    "image": "./images/foods/briyani.jpeg",
+    "description": [
+      "Biryani is a mixed rice dish originating among the Muslims of the Indian subcontinent. It is made with Indian spices, rice, and usually some type of meat (chicken, beef, goat, pork, lamb, prawn, or fish), and sometimes, in addition, eggs and/or vegetables such as potatoes in certain regional varieties. Biryani is a staple in South Asian cuisine and is popular in Malaysia, where it is often served at weddings, celebrations, and special occasions. The dish is known for its rich flavors, aromatic spices, and tender meat, making it a favorite among locals and tourists alike."
+    ]
+  },
+  {
+    "title": "Tandoori Chicken",
+    "category": "Indian",
+    "image": "./images/foods/tandoriChicken.jpg",
+    "description": [
+      "Tandoori chicken is a well-known grilled dish in Indian cuisine, often enjoyed by those familiar with Indian food. The chicken is marinated in a mixture of spices and yogurt before being cooked in a tandoor, a cylindrical clay oven. This type of oven is also used to bake naan, a traditional Indian bread.", 
+      "The intense heat of the tandoor results in the chicken and bread being crispy on the outside and tender on the inside, creating a delicious contrast in textures. While traditionally the chicken is dyed red using saffron for color, many restaurants now use food coloring as a more cost-effective alternative. Despite not having a tandoor oven at home, it's still possible to make tasty tandoori chicken using a regular oven."
+    ]
+  },
+  {
+    "title": "Pasembur",
+    "category": "Indian",
+    "image": "./images/foods/pasembur.jpg",
+    "description": [
+      "Pasembur is a well-loved Malaysian salad hailing from Penang, renowned for its diverse flavors and textures. Typically, it features shredded vegetables like cucumber, turnip, and bean sprouts, combined with crispy deep-fried fritters, prawn fritters, hard-boiled eggs, and tofu. These ingredients are coated in a spicy and tangy sauce made from sweet potatoes.", 
+      "The dish is then topped with crushed peanuts and a creamy, spicy dressing. Pasembur is favored for its delicious mix of tastes and mouthfeel, making it a delightful choice, particularly in warm weather."
+    ]
+  },
+  {
+    "title": "Nasi Lemak",
+    "category": "Malay",
+    "image": "./images/foods/nasiLemak.jpg",
+    "description": [
+      "Nasi lemak, a popular Malaysian dish, gets its name from the process of cooking rice in coconut milk, giving it a rich and creamy texture. The rice is often cooked with pandan leaves, turmeric, and lemongrass for added aroma. Served on a plate lined with banana leaves, nasi lemak is typically accompanied by sliced cucumbers, small anchovies, roasted peanuts, fried kangkong, hard-boiled eggs, Indian pickles, and spicy sambal sauce. Variations may include additional ingredients such as chicken, octopus, squid, clams, beef curry, or beef lungs. Traditionally eaten for breakfast, nasi lemak is commonly sold at roadside stalls in the morning and can now be found at market stalls or stores wrapped in newspapers, oil paper, or banana leaves. Some restaurants also serve nasi lemak for lunch or dinner."
+    ]
+  },
+  {
+    "title": "Satay",
+    "category": "Malay",
+    "image": "./images/foods/satay.jpeg",
+    "description": [
+      "Satay is a popular Southeast Asian dish, particularly in Malaysia, Indonesia, Singapore, and Thailand, consisting of skewered and grilled meat, usually served with a flavorful dipping sauce. The meat, often chicken, beef, or lamb, is marinated in a mixture of spices and herbs before being skewered and grilled over charcoal or an open flame, giving it a smoky and charred flavor.", 
+      "Satay is typically served with a peanut sauce, which is sweet, savory, and slightly spicy, adding depth to the dish. Satay is commonly sold as street food and is enjoyed as a snack or a main course, often accompanied by rice cakes, cucumber slices, and onions. It is a popular dish for celebrations and gatherings, loved for its delicious taste and aromatic flavors."
+    ]
+  },
+  {
+    "title": "Nasi Kerabu",
+    "category": "Malay",
+    "image": "./images/foods/nasiKerabu.jpeg",
+    "description": [
+      "Nasi Kerabu is a traditional Malay dish originating from the Malaysian state of Kelantan. It is known for its vibrant blue color, which is derived from the petals of the butterfly -pea flower, known locally as 'bunga telang,' that is mixed with the rice during cooking. Nasi Kerabu is typically served with an assortment of fresh herbs and vegetables, such as shredded cabbage, bean sprouts, and long beans, as well as grilled or fried fish or chicken.", 
+      "The dish is often accompanied by various condiments and side dishes, including sambal (spicy chili paste), salted egg, and kerisik (toasted grated coconut). Nasi Kerabu is prized for its unique flavor profile, which combines the fragrance of the blue rice with the freshness of the herbs and the savory elements of the accompanying dishes, making it a popular choice among Malaysians and visitors alike."
+    ]
+  },
+  {
+    "title": "Lemang",
+    "category": "Malay",
+    "image": "./images/foods/lemang.jpeg",
+    "description": [
+      "Lemang is a traditional Malaysian dish made from glutinous rice and coconut milk, cooked in a hollowed bamboo tube lined with banana leaves. This cooking method gives the rice a distinctive aroma and flavor, with a slightly smoky taste. Lemang is commonly served during festive occasions such as Hari Raya Aidilfitri and Hari Raya Aidiladha, often eaten with rendang (a spicy meat dish) or curry.", 
+      "The process of making lemang involves preparing the bamboo tubes, washing the glutinous rice, mixing it with coconut milk, and then placing it into the bamboo tubes. The tubes are then roasted over an open fire until the rice is cooked and has a firm texture. Lemang is a popular dish in Malaysia, loved for its unique taste and cultural significance."
+    ]
+  },
+  {
+    "title": "Rendang",
+    "category": "Malay",
+    "image": "./images/foods/rendang.jpeg",
+    "description": [
+      "Rendang is a traditional Indonesian and Malaysian dish made by slow-cooking meat in coconut milk and a mixture of lemongrass, galangal, garlic, turmeric, ginger, and chilies, along with other spices. The slow-cooking process allows the meat to absorb the rich flavors of the spices and coconut milk, resulting in a tender and aromatic dish. Rendang is typically made with beef, although variations using chicken, lamb, or other meats are also popular.", 
+      "Rendang is often served during festive occasions and celebrations, as well as for everyday meals. The dish is known for its complex flavors, combining sweetness, spiciness, and umami, making it a favorite among those who enjoy rich and flavorful dishes. Rendang is a staple in Indonesian and Malaysian cuisine, reflecting the diverse culinary traditions of the region."
+    ]
+  },
+  {
+    "title": "Keropok Lekor",
+    "category": "Malay",
+    "image": "./images/foods/keropokLekor.jpeg",
+    "description": [
+      "Keropok lekor is a traditional Malay snack made from a mixture of fish paste and sago flour, seasoned with salt and sugar, and then deep-fried until crispy. The snack is popular in Malaysia, particularly in the states of Terengganu and Kelantan, where it is often enjoyed as a teatime treat or a light snack. Keropok lekor is typically served with a spicy chili sauce or a sweet and tangy dipping sauce, adding extra flavor to the crispy and savory snack.", 
+      "The process of making keropok lekor involves mixing the fish paste and sago flour, shaping the mixture into long sticks, and then frying them in hot oil until they are golden brown and crispy. The snack is known for its crunchy texture and delicious taste, making it a favorite among locals and visitors alike, offering a delicious taste of Malaysian street food culture."
+    ]
+  }
+]

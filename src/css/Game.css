@@ -1,0 +1,134 @@
+p {
+    text-align: justify;
+}
+
+img {
+    width: 400px;
+    height: 500px;
+}
+
+
+.BackSec {
+    width: 100%;
+    height: 900px;
+    background-size: 100%;
+    position: relative;
+    /* Ensure the parent container is positioned */
+    padding: 50px;
+    /* Add padding to space out content from the background */
+    text-align: center;
+    /* Center the content within the background section */
+    color: black;
+    /* Set text color to be visible on the background */
+
+}
+
+.gameText {
+    padding: 80px;
+    margin: 80px;
+    font-size: 120px;
+    text-align: center;
+    color: whitesmoke;
+    font-family: sans-serif;
+}
+
+.BackSec::before {
+    width: 100%;
+    height: 100%;
+    content: "";
+    /* Replace with your image file path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: blur(6px);
+    /* Apply blur effect to the background image only */
+    z-index: -1;
+    /* Send the background image behind the content */
+}
+
+section h2 {
+    color: rgb(38, 183, 113);
+    text-decoration-line: underline;
+    font-size: 60px;
+}
+
+@media screen and (max-width: 1300px) {
+    .BackSec {
+        height: 660px;
+
+    }
+
+    .gameText {
+        font-size: 70px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .BackSec {
+        height: 600px;
+
+    }
+
+    .gameText {
+        font-size: 70px;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .BackSec {
+        height: 500px;
+
+    }
+
+    .gameText {
+        padding: 60px;
+        margin: 60px;
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .BackSec {
+        height: 400px;
+
+    }
+
+    .gameText {
+        padding: 40px;
+        margin: 40px;
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .BackSec {
+        height: 250px;
+
+    }
+
+    .gameText {
+        padding: 10px;
+        margin: 10px;
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 310px) {
+    .BackSec {
+        height: 150px;
+
+    }
+
+    .gameText {
+        padding: 5px;
+        margin: 5px;
+        font-size: 15px;
+    }
+}

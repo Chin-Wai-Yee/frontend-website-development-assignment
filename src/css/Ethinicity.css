@@ -1,0 +1,52 @@
+body{
+    font-family: sans-serif;
+}
+
+.ethicsCol h1 {
+    color: black;
+    font-size: 150px;
+    text-align: center;
+}
+
+.row img{
+    width: 950px;
+    height: 400px;
+    object-fit: cover;
+}
+.row h2{
+    color: rgb(94, 83, 208);
+    text-decoration-line: underline;
+    font-size: 60px;
+}
+.ethicsBackground {
+    position: relative;
+    /* Ensure the parent container is positioned */
+    padding: 380px;
+    /* Add padding to space out content from the background */
+    text-align: center;
+    /* Center the content within the background section */
+    color: black;
+    /* Set text color to be visible on the background */
+
+}
+
+.ethicsBackground::before {
+    width: 100%;
+    height: 100%;
+    content: "";
+    /* Replace with your image file path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: blur(3px);
+    /* Apply blur effect to the background image only */
+    z-index: -1;
+    /* Send the background image behind the content */
+}
