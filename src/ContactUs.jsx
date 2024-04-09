@@ -12,33 +12,18 @@ import Button from '@mui/material/Button';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import MailIcon from '@mui/icons-material/Mail';
 import RecentActorsIcon from '@mui/icons-material/RecentActors';
-const form = document.getElementById('myForm');
-
-function submitFeedback() {
-  var user = JSON.parse(sessionStorage.getItem('user'));
-  var fName = user["First Name"];
-  var lName = user["Last Name"];
-  var phone = user["phone"];
-  var email = user["email"];
-  var message = user["message"];
-  var feedback = {
-    "First Name": fName,
-    "Last Name": lName,
-    "phone": phone,
-    "email": email,
-    "message": message
-  };
-  alert('Feedback submitted successfully!');
-  redirect('/');
-}
 
 function handleSubmit(event) {
   event.preventDefault();
-  var fName = document.getElementById("firstName").value;
-  var lName = document.getElementById("lastName").value;
-  var phone = document.getElementById("phone").value;
-  var email = document.getElementById("email").value;
-  var message = document.getElementById("message").value;
+  alert("Form submitted");
+
+  var form = event.target;
+  var fName = form.firstName.value;
+  var lName = form.lastName.value;
+  var phone = form.phone.value;
+  var email = form.email.value;
+  var message = form.message.value;
+
   var user = {
     "First Name": fName,
     "Last Name": lName,
@@ -47,9 +32,12 @@ function handleSubmit(event) {
     "message": message
   };
 
+  console.log(user);
+
   sessionStorage.setItem('user', JSON.stringify(user));
-  redirect('/');
+  return redirect("/");
 }
+
 function ContactUs() {
 
   const styles = {
@@ -57,6 +45,7 @@ function ContactUs() {
     largeIcon: {
       fontSize: 100,
       textAlign: 'center',
+      color: 'white'
     },
 
     centerRow: {
@@ -148,12 +137,13 @@ function ContactUs() {
             <Typography variant='h4'>
               Please fill in this feeback form
             </Typography>
-            <form action={handleSubmit} id="myForm">
+            <form onSubmit={handleSubmit} id="myForm">
               <Grid container>
                 <Grid xs={12} md={6}>
                   <TextField
                     fullWidth
                     id="firstName"
+                    name="firstName"
                     label="First Name"
                     variant="outlined"
                     margin="normal"
@@ -164,6 +154,7 @@ function ContactUs() {
                   <TextField
                     fullWidth
                     id="lastName"
+                    name="lastName"
                     label="Last Name"
                     variant="outlined"
                     margin="normal"
@@ -174,6 +165,7 @@ function ContactUs() {
                   <TextField
                     fullWidth
                     id="phone"
+                    name="phone"
                     label="Contact Number"
                     variant="outlined"
                     margin="normal"
@@ -184,6 +176,7 @@ function ContactUs() {
                   <TextField
                     fullWidth
                     id="email"
+                    name="email"
                     label="Email"
                     type="email"
                     variant="outlined"
@@ -195,6 +188,7 @@ function ContactUs() {
                   <TextField
                     fullWidth
                     id="message"
+                    name="message"
                     label="Message"
                     variant="outlined"
                     margin="normal"

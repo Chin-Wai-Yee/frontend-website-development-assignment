@@ -27,6 +27,9 @@ import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
 import FastfoodIcon from '@mui/icons-material/Fastfood';
 import EmojiPeopleIcon from '@mui/icons-material/EmojiPeople';
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
+import DarkModeIcon from '@mui/icons-material/DarkMode';
+import LightModeIcon from '@mui/icons-material/LightMode';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
 const drawerWidth = 240;
 
@@ -189,6 +192,23 @@ function DrawerAppBar(props) {
               <Button component={Link} to="/contact-us" color='inherit'>
                 Contact Us
               </Button>
+            </Box>
+            <Box>
+              <IconButton
+                color="inherit"
+                aria-label="dark mode"
+                onClick={props.toggleTheme}
+              >
+                {props.theme === 'light' ? <DarkModeIcon /> : <LightModeIcon />}
+              </IconButton>
+              <IconButton
+                color="inherit"
+                aria-label="account"
+                component={Link}
+                to="/login"
+              >
+                <AccountCircleIcon />
+              </IconButton>
             </Box>
           </Toolbar>
         </AppBar>
