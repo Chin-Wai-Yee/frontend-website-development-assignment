@@ -10,6 +10,6 @@ npm install
 ```
 4. Run the following command to start the frontend
 ```bash
-npm start
+npm start build-localhost
 ```
 5. Enjoy!
