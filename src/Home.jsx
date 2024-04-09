@@ -3,6 +3,8 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Unstable_Grid2';
 import Divider from '@mui/material/Divider';
+import Button from '@mui/material/Button';
+import Link from '@mui/material/Link';
 import TitleBoxWithBackground from './reuseComponent/TitleBoxWithBackground';
 import { Typewriter } from 'react-simple-typewriter';
 import "./Home.css";
@@ -39,9 +41,9 @@ function StaticBackgroundBox(props) {
             borderWidth: 2,
           }}
         />
-        <Typography variant='body1' paragraph={true}>
+        <Box>
           {props.children}
-        </Typography>
+        </Box>
       </Grid>
     </Grid>
   );
@@ -57,6 +59,13 @@ function Home() {
     console.log('done');
     setBlink(false);
     console.log(blink);
+  }
+  
+  const styles = {
+    bodyText: {
+      textAlign: 'justify',
+      marginBottom: '1rem'
+    }
   }
 
   return (
@@ -80,22 +89,42 @@ function Home() {
         </Box>
       </TitleBoxWithBackground>
       <StaticBackgroundBox background={image1} title="Malaysia's Cultural Diversity" imagePosition='left'>
+        <Typography variant='body1' sx={styles.bodyText} paragraph>
           Malaysia is a dynamic fusion of cultures, where Malay, Chinese, Indian, and indigenous traditions intertwine to
           create a vibrant tapestry of diversity. From bustling cities to rural villages, Malaysia's multiculturalism is
           evident in its cuisine, festivals, and customs. Each ethnic group contributes its unique flavors, languages, and
           customs, enriching the nation's cultural landscape. Despite their differences, Malaysians embrace multiculturalism with
           pride, fostering harmony and unity in this melting pot of traditions.
+        </Typography>
+        <Button component={Link} href="/ethnicity">
+          Learn More
+        </Button>
       </StaticBackgroundBox>
       <StaticBackgroundBox background={image2} title="Exploring Malaysia: Rich in Culture, Delicious Food, and Stunning Scenery">
+        <Typography variant='body1' sx={styles.bodyText} paragraph>
           Malaysia's culture is a vibrant tapestry woven with diverse influences from its Malay, Chinese, Indian, and indigenous communities. This multicultural blend manifests in various aspects of daily life, from language and religion to art, architecture, and customs. Bahasa Malaysia serves as the official language, while English is widely spoken, alongside various Chinese dialects and Tamil. Religious diversity is embraced, with Islam being the predominant faith, followed by Buddhism, Hinduism, Christianity, and indigenous beliefs.
 
           Malaysia's natural beauty is equally captivating, boasting pristine beaches, lush rainforests, and breathtaking landscapes. The country is blessed with an abundance of biodiversity, home to diverse flora and fauna. Visitors can explore stunning islands like Langkawi and Penang, trek through ancient rainforests in Taman Negara, or marvel at the majestic peaks of Mount Kinabalu. Urban centers like Kuala Lumpur showcase modern marvels like the iconic Petronas Twin Towers, seamlessly blending with the country's natural wonders.
+        </Typography>
+        <Button component={Link} href="/games">
+          Learn More
+        </Button>
       </StaticBackgroundBox>
       <StaticBackgroundBox background={image3} title="Diverse Faiths in Malaysia: A Harmonious Blend of Religions" imagePosition='left'>
-      In Malaysia, religious diversity is vibrant and integral to society. Islam is the predominant faith among Malays, while Buddhism and Hinduism are embraced by the Chinese and Indian communities, respectively. Christianity is practiced by various groups, alongside indigenous beliefs. Despite differences, Malaysia promotes religious freedom and harmony, evident in its calendar filled with diverse religious festivals that unite the multicultural population.
+        <Typography variant='body1' sx={styles.bodyText} paragraph>
+          In Malaysia, religious diversity is vibrant and integral to society. Islam is the predominant faith among Malays, while Buddhism and Hinduism are embraced by the Chinese and Indian communities, respectively. Christianity is practiced by various groups, alongside indigenous beliefs. Despite differences, Malaysia promotes religious freedom and harmony, evident in its calendar filled with diverse religious festivals that unite the multicultural population.
+        </Typography>
+        <Button component={Link} href="/food">
+          Learn More
+        </Button>
       </StaticBackgroundBox>
       <StaticBackgroundBox background={image4} title="Honoring Variance: Festivities Across Malaysia">
-      Malaysia's festivals embody its cultural diversity, uniting people in celebration. From Eid al-Fitr's feasts to the colorful parades of Chinese New Year and the illuminated streets of Deepavali, each festival showcases cherished traditions and fosters community bonds. These vibrant celebrations offer a glimpse into Malaysia's multicultural essence, emphasizing the spirit of togetherness and mutual respect that defines the nation.
+        <Typography variant='body1' sx={styles.bodyText} paragraph>
+          Malaysia's festivals embody its cultural diversity, uniting people in celebration. From Eid al-Fitr's feasts to the colorful parades of Chinese New Year and the illuminated streets of Deepavali, each festival showcases cherished traditions and fosters community bonds. These vibrant celebrations offer a glimpse into Malaysia's multicultural essence, emphasizing the spirit of togetherness and mutual respect that defines the nation.
+        </Typography>
+        <Button component={Link} href="/culture">
+          Learn More
+        </Button>
       </StaticBackgroundBox>
     </>
   );
