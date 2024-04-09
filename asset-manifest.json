@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/fwd-react-flask-test/static/css/main.06f7b1b4.css",
-    "main.js": "/fwd-react-flask-test/static/js/main.3127bc76.js",
-    "static/media/img-4.jpg": "/fwd-react-flask-test/static/media/img-4.06b5f4324ceece754d85.jpg",
-    "static/media/img-3.jpg": "/fwd-react-flask-test/static/media/img-3.41f63e109b4e8e535a41.jpg",
+    "main.js": "/fwd-react-flask-test/static/js/main.713efc7f.js",
     "static/media/bananaLeafRice.jpg": "/fwd-react-flask-test/static/media/bananaLeafRice.630d69e27b346cb4047d.jpg",
-    "static/media/img-1.jpg": "/fwd-react-flask-test/static/media/img-1.856ac0177199c8a56db8.jpg",
     "static/media/background2.jpg": "/fwd-react-flask-test/static/media/background2.076fdc1e34fa93eb28cf.jpg",
-    "static/media/malaysia.jpg": "/fwd-react-flask-test/static/media/malaysia.a821c0fbb0f85c4c149c.jpg",
-    "static/media/img-2.jpg": "/fwd-react-flask-test/static/media/img-2.8ecdb2cb430c37207881.jpg",
+    "static/media/img-3.jpg": "/fwd-react-flask-test/static/media/img-3.6a80dd85f7e32252973a.jpg",
+    "static/media/img-4.jpg": "/fwd-react-flask-test/static/media/img-4.5c6c568e1baffdb0dda6.jpg",
+    "static/media/img-1.jpg": "/fwd-react-flask-test/static/media/img-1.9bf6969b60a71de4648a.jpg",
     "static/media/deepavali.jpg": "/fwd-react-flask-test/static/media/deepavali.e5c2d6e4da7ee1ac9df6.jpg",
+    "static/media/malaysia.jpg": "/fwd-react-flask-test/static/media/malaysia.de55f27110377f059dca.jpg",
+    "static/media/img-2.jpg": "/fwd-react-flask-test/static/media/img-2.660e4c80b7353e9e4b55.jpg",
     "static/media/chinese.jpeg": "/fwd-react-flask-test/static/media/chinese.0c65b8c3755df0f1f913.jpeg",
     "static/media/hotpot.jpg": "/fwd-react-flask-test/static/media/hotpot.f4e47796635f8a62d8d5.jpg",
     "static/media/hariRayaAildilfirti.jpg": "/fwd-react-flask-test/static/media/hariRayaAildilfirti.d80b7eafd92b09e697b3.jpg",
@@ -27,8 +27,8 @@
     "static/media/indian.jpg": "/fwd-react-flask-test/static/media/indian.1e4c2960ee71f66be9af.jpg",
     "static/media/galahpanjang.jpeg": "/fwd-react-flask-test/static/media/galahpanjang.4638f6eddbaec2800e6c.jpeg",
     "static/media/guli.jpg": "/fwd-react-flask-test/static/media/guli.3fefff46702a50b6fcd2.jpg",
-    "static/media/img-6.jpg": "/fwd-react-flask-test/static/media/img-6.7960ef3c585246a69816.jpg",
     "static/media/pasembur.jpg": "/fwd-react-flask-test/static/media/pasembur.303f4019a638170879d0.jpg",
+    "static/media/img-6.jpg": "/fwd-react-flask-test/static/media/img-6.09ff87e5059810a16125.jpg",
     "static/media/malay.jpeg": "/fwd-react-flask-test/static/media/malay.ec3ae5ea5c850f441f15.jpeg",
     "static/media/gasing.png": "/fwd-react-flask-test/static/media/gasing.948f77deeca4d12bc1ef.png",
     "static/media/dimSum.jpg": "/fwd-react-flask-test/static/media/dimSum.c479032c3c1c44440bba.jpg",
@@ -54,10 +54,10 @@
     "static/media/ceper.jpeg": "/fwd-react-flask-test/static/media/ceper.6ffeeb23ba1040a3a151.jpeg",
     "index.html": "/fwd-react-flask-test/index.html",
     "main.06f7b1b4.css.map": "/fwd-react-flask-test/static/css/main.06f7b1b4.css.map",
-    "main.3127bc76.js.map": "/fwd-react-flask-test/static/js/main.3127bc76.js.map"
+    "main.713efc7f.js.map": "/fwd-react-flask-test/static/js/main.713efc7f.js.map"
   },
   "entrypoints": [
     "static/css/main.06f7b1b4.css",
-    "static/js/main.3127bc76.js"
+    "static/js/main.713efc7f.js"
   ]
 }
