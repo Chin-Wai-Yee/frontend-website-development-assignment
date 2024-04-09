@@ -21,13 +21,13 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="ethnicity" element={<Ethinicity />} />
-          <Route path="games" element={<Games />} />
-          <Route path="food" element={<Food />} />
-          <Route path="culture" element={<Culture />} />
-          <Route path="contact-us" element={<ContactUs />} />
-          <Route path="login" element={<SignInSide />}/>
+          <Route path="/about" element={<About />} />
+          <Route path="/ethnicity" element={<Ethinicity />} />
+          <Route path="/games" element={<Games />} />
+          <Route path="/food" element={<Food />} />
+          <Route path="/culture" element={<Culture />} />
+          <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="/login" element={<SignInSide />}/>
         </Route>
       </Routes>
     </BrowserRouter>
