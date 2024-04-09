@@ -1,14 +1,5 @@
 // import './css/Culture.css';
 import React from 'react';
-import image1 from './images/cultures/dragon.png';
-import image2 from './images/cultures/midAutumn.jpg';
-import image3 from './images/cultures/dragonBoat.jpg';
-import image4 from './images/cultures/deepavali.jpg';
-import image5 from './images/cultures/thaipusam.jpg';
-import image6 from './images/cultures/pongal.jpg';
-import image7 from './images/cultures/hariRayaAildilfirti.jpg';
-import image8 from './images/cultures/hariRayaHaji.jpg';
-import image9 from './images/cultures/rasul.jpg';
 import cultureBackground from './images/cultures/background.jpg';
 
 import TitleBoxWithBackground from './reuseComponent/TitleBoxWithBackground';

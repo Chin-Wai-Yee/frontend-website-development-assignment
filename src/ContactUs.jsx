@@ -1,5 +1,5 @@
 import React from 'react';
-import { redirect } from 'react-router-dom';
+import { redirect } from "react-router-dom";
 import TitleBoxWithBackground from './reuseComponent/TitleBoxWithBackground';
 
 import backgroundImage from './images/contact-us/contact-us.jpg';
@@ -15,6 +15,7 @@ import RecentActorsIcon from '@mui/icons-material/RecentActors';
 
 function handleSubmit(event) {
   event.preventDefault();
+  
   alert("Form submitted");
 
   var form = event.target;
@@ -35,7 +36,7 @@ function handleSubmit(event) {
   console.log(user);
 
   sessionStorage.setItem('user', JSON.stringify(user));
-  return redirect("/");
+  return redirect("/about");
 }
 
 function ContactUs() {
@@ -118,8 +119,8 @@ function ContactUs() {
           </Grid>
         </Grid>
       </TitleBoxWithBackground>
-      <Box>
-        <Grid container spacing={6} padding={4}>
+      <Box width='100%'>
+        <Grid container width='100%' spacing={6} padding={4}>
           <Grid item md>
             <Typography variant='h2' marginBottom='2rem'>
               Leave us a message

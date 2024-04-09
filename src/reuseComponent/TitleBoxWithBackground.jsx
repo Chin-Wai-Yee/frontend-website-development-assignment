@@ -1,6 +1,5 @@
 import React from 'react';
 import Box from '@mui/material/Box';
-import { ZoomIn } from '@mui/icons-material';
 
 function TitleBoxWithBackground(props) {
   return (

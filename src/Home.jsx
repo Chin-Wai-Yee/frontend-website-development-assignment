@@ -7,7 +7,6 @@ import Button from '@mui/material/Button';
 import Link from '@mui/material/Link';
 import TitleBoxWithBackground from './reuseComponent/TitleBoxWithBackground';
 import { Typewriter } from 'react-simple-typewriter';
-import "./Home.css";
 import homepageImage from './images/homepage/malaysia.jpg';
 import image1 from './images/homepage/img-1.jpg';
 import image2 from './images/homepage/img-2.jpg';
@@ -21,7 +20,7 @@ function StaticBackgroundBox(props) {
       container
       color={'text.primary'}
     >
-      <Grid xs={12} md={7} order={{ xs: 2, md: props.imagePosition == 'left'? 1 : 3}} minHeight={'100vh'}
+      <Grid xs={12} md={7} order={{ xs: 2, md: props.imagePosition === 'left'? 1 : 3}} minHeight={'100vh'}
         sx={{
           backgroundImage: `url(${props.background})`,
           backgroundSize: 'cover',
