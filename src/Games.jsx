@@ -14,34 +14,37 @@ function GameContent(props) {
       <Typography variant='h2' textAlign='center' marginBottom='1rem'>
         {props.title}
       </Typography>
-      <Box
-        display='flex'
-        justifyContent='center'
+      <Stack
+        width='100%'
+        direction='column'
         alignItems='center'
-        >
-        <img
+        justifyContent='center'
+      >
+        <Box
+          component='img'
           src={require(`${props.image}`)}
           alt={props.title}
-          style={{
-            width: '60vw',
+          sx={{
+            width: {xs: '100%', md: '50%'},
             height: 'auto',
+            maxHeight: {xs: '50vh', md: '60vh'},
             objectFit: 'contain',
             marginBottom: '1rem'
           }}
-          />
-      </Box>
-      <Box
-        display='flex'
-        justifyContent='center'
-        alignItems='center'
-        paddingX={{sx: 4, md: 8}}
-        paddingY={2}
-        marginBottom='1rem'
-      >
-        <Typography maxWidth='sm' variant='body1' textAlign='justify'>
-          {props.children}
-        </Typography>
-      </Box>
+        />
+        <Box
+          display='flex'
+          justifyContent='center'
+          alignItems='center'
+          paddingX={{sx: 4, md: 8}}
+          paddingY={2}
+          marginBottom='1rem'
+          >
+          <Typography maxWidth='sm' variant='body1' textAlign='justify'>
+            {props.children}
+          </Typography>
+        </Box>
+      </Stack>
       <Divider
         variant='middle'
         sx={{
@@ -65,7 +68,7 @@ function Game() {
         {
           gameData.map((game) => {
             return (
-              <GameContent title={game.name} image={game.image}>
+              <GameContent title={game.name} image={game.image} key={game.name}>
                 {game.description}
               </GameContent>
             );

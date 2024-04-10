@@ -31,10 +31,10 @@ function About() {
         className="video"
         src="https://www.youtube.com/embed/5l-EK-foMa8?si=tEbk9EKT5CLg1Y4R"
         title="YouTube video player"
-        frameborder="0"
+        border={0}
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-picture"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
+        referrerPolicy="strict-origin-when-cross-origin"
+        allowFullScreen
       >
       </iframe>
     </Box>

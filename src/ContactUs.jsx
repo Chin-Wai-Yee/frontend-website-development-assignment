@@ -68,7 +68,7 @@ function ContactUs() {
     <>
       <TitleBoxWithBackground background={backgroundImage}>
         <Grid container justifyContent='center' alignItems='center'>
-          <Grid xs={12} item>
+          <Grid xs={12}>
             <Typography variant='h2' textAlign='center'>
               GET IN TOUCH
             </Typography>
@@ -121,7 +121,7 @@ function ContactUs() {
       </TitleBoxWithBackground>
       <Box width='100%' bgcolor='background.paper'>
         <Grid container width='100%' spacing={6} padding={4}>
-          <Grid item md>
+          <Grid md>
             <Typography variant='h2' marginBottom='2rem'>
               Leave us a message
             </Typography>
@@ -134,7 +134,7 @@ function ContactUs() {
               Our staff will reply to your message within 24 hours. Please stay tune to the reply via email or phone.
             </Typography>
           </Grid>
-          <Grid item md>
+          <Grid md>
             <Typography variant='h4'>
               Please fill in this feeback form
             </Typography>

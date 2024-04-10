@@ -13,7 +13,7 @@ const Image = (image) => {
   )
 }
 
-function Ethinicity() {
+function Ethnicity() {
   return (
     <Box>
       <TitleBoxWithBackground background={ethnicityBackground}>
@@ -35,4 +35,4 @@ function Ethinicity() {
   );
 };
 
-export default Ethinicity;
+export default Ethnicity;

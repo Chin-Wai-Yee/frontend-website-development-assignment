@@ -8,6 +8,7 @@ import {
 } from '@mui/material/styles';
 import DrawerAppBar from "./reuseComponent/DrawerAppBar";
 import ScrollTopButton from "./reuseComponent/ScrollTopButton";
+import ScrollToTop from "./reuseComponent/ScrollToTop";
 import Footer from "./Footer";
 
 const Layout = () => {
@@ -31,6 +32,7 @@ const Layout = () => {
     <>
       <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
         <DrawerAppBar toggleTheme={switchTheme} theme={darkMode ? 'light' : 'dark'}/>
+        <ScrollToTop />
         <ScrollTopButton />
         <Outlet />
         <Footer />
