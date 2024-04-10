@@ -1,14 +1,16 @@
 {
   "files": {
     "main.css": "/fwd-react-flask-test/static/css/main.06f7b1b4.css",
-    "main.js": "/fwd-react-flask-test/static/js/main.713efc7f.js",
+    "main.js": "/fwd-react-flask-test/static/js/main.f9b27b60.js",
     "static/media/bananaLeafRice.jpg": "/fwd-react-flask-test/static/media/bananaLeafRice.630d69e27b346cb4047d.jpg",
+    "static/media/cat-drift.gif": "/fwd-react-flask-test/static/media/cat-drift.fb16857b5c4b30f268fa.gif",
     "static/media/background2.jpg": "/fwd-react-flask-test/static/media/background2.076fdc1e34fa93eb28cf.jpg",
     "static/media/img-3.jpg": "/fwd-react-flask-test/static/media/img-3.6a80dd85f7e32252973a.jpg",
     "static/media/img-4.jpg": "/fwd-react-flask-test/static/media/img-4.5c6c568e1baffdb0dda6.jpg",
     "static/media/img-1.jpg": "/fwd-react-flask-test/static/media/img-1.9bf6969b60a71de4648a.jpg",
     "static/media/deepavali.jpg": "/fwd-react-flask-test/static/media/deepavali.e5c2d6e4da7ee1ac9df6.jpg",
     "static/media/malaysia.jpg": "/fwd-react-flask-test/static/media/malaysia.de55f27110377f059dca.jpg",
+    "static/media/malay.jpg": "/fwd-react-flask-test/static/media/malay.c97ac35e7c9d4f32836e.jpg",
     "static/media/img-2.jpg": "/fwd-react-flask-test/static/media/img-2.660e4c80b7353e9e4b55.jpg",
     "static/media/chinese.jpeg": "/fwd-react-flask-test/static/media/chinese.0c65b8c3755df0f1f913.jpeg",
     "static/media/hotpot.jpg": "/fwd-react-flask-test/static/media/hotpot.f4e47796635f8a62d8d5.jpg",
@@ -29,7 +31,7 @@
     "static/media/guli.jpg": "/fwd-react-flask-test/static/media/guli.3fefff46702a50b6fcd2.jpg",
     "static/media/pasembur.jpg": "/fwd-react-flask-test/static/media/pasembur.303f4019a638170879d0.jpg",
     "static/media/img-6.jpg": "/fwd-react-flask-test/static/media/img-6.09ff87e5059810a16125.jpg",
-    "static/media/malay.jpeg": "/fwd-react-flask-test/static/media/malay.ec3ae5ea5c850f441f15.jpeg",
+    "static/media/malay2.jpeg": "/fwd-react-flask-test/static/media/malay2.ec3ae5ea5c850f441f15.jpeg",
     "static/media/gasing.png": "/fwd-react-flask-test/static/media/gasing.948f77deeca4d12bc1ef.png",
     "static/media/dimSum.jpg": "/fwd-react-flask-test/static/media/dimSum.c479032c3c1c44440bba.jpg",
     "static/media/dragonBoat.jpg": "/fwd-react-flask-test/static/media/dragonBoat.d18130c97a93edd26053.jpg",
@@ -54,10 +56,10 @@
     "static/media/ceper.jpeg": "/fwd-react-flask-test/static/media/ceper.6ffeeb23ba1040a3a151.jpeg",
     "index.html": "/fwd-react-flask-test/index.html",
     "main.06f7b1b4.css.map": "/fwd-react-flask-test/static/css/main.06f7b1b4.css.map",
-    "main.713efc7f.js.map": "/fwd-react-flask-test/static/js/main.713efc7f.js.map"
+    "main.f9b27b60.js.map": "/fwd-react-flask-test/static/js/main.f9b27b60.js.map"
   },
   "entrypoints": [
     "static/css/main.06f7b1b4.css",
-    "static/js/main.713efc7f.js"
+    "static/js/main.f9b27b60.js"
   ]
 }
