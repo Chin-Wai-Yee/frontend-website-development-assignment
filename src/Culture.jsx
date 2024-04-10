@@ -27,10 +27,10 @@ function Culture() {
           races.map((race) => {
             return (
               <>
-                <Typography variant='h3' marginBottom='1rem' padding={4}>
+                <Typography variant='h3' marginBottom='1rem' padding={4} key={race + 'culture title'}>
                   {race}
                 </Typography>
-                <Stack spacing={6} marginBottom='0.5rem'>
+                <Stack spacing={6} marginBottom='0.5rem' key={race + 'culture stack'}>
                   {
                     cultureData
                       .filter((culture) => {
@@ -42,6 +42,7 @@ function Culture() {
                             image={require(`${culture.image}`)}
                             title={culture.name}
                             imageOnRight={index % 2 === 1 ? true : false}
+                            key={culture.name + 'culture' + index}
                           >
                             {culture.description}
                           </ImageWithText>

@@ -24,7 +24,6 @@ function TitleBoxWithBackground(props) {
           height: '100%',
           top: 0,
           left: 0,
-          backgroundSize: 'cover',
           willChange: 'transform',
           zIndex: -1000,
         },

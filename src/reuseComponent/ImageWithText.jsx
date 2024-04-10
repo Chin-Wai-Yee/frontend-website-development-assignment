@@ -14,7 +14,7 @@ function ImageWithText({ children, image, title, imageOnRight = false }) {
 
   return (
     <Grid columnSpacing={8} container maxWidth='100%' display='flex'>
-      <Grid item
+      <Grid
         order={{ xs: 1, md: imageOrder }}
         xs={12} md={5}
       >
@@ -30,7 +30,7 @@ function ImageWithText({ children, image, title, imageOnRight = false }) {
           }}
         />
       </Grid>
-      <Grid item
+      <Grid
         xs={12} md={7}
         order={2}
       >
