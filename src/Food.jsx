@@ -33,7 +33,7 @@ function DescriptionModal(props) {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-      
+
       }}
     >
       <Grid
@@ -45,11 +45,10 @@ function DescriptionModal(props) {
           width: '80vw',
           backgroundColor: 'background.paper',
         }}>
-        <Grid xs={6} display='flex' justifyContent='center'>
+        <Grid xs={6} display='flex' justifyContent='center' alignItems='center'>
           <img
             src={props.image} alt={props.title}
             style={{
-              display: 'flex',
               width: '100%',
               height: '100%',
               maxHeight: '60vh',
@@ -61,7 +60,7 @@ function DescriptionModal(props) {
           <Box maxHeight='100%' overflow='auto' paddingRight='1rem'>
             <Stack marginLeft={-1} direction='row' marginBottom='2rem'>
               <IconButton onClick={props.onClose}>
-                <ArrowBackIcon/>
+                <ArrowBackIcon />
               </IconButton>
               <Typography variant='h4'>
                 {props.title}
@@ -90,7 +89,7 @@ const Image = (image) => {
 function ImageCard(props) {
   const [expanded, setExpanded] = React.useState(false);
   const [modalOpen, setModalOpen] = React.useState(false);
-  
+
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
@@ -102,7 +101,7 @@ function ImageCard(props) {
   const handleModalClose = () => {
     setModalOpen(false);
   };
-  
+
   const theme = useTheme();
   const { height, width } = useWindowDimensions();
 
@@ -111,7 +110,7 @@ function ImageCard(props) {
       sx={{
         maxWidth: 'inherit',
       }}
-      >
+    >
       <CardActionArea
         onClick={width < theme.breakpoints.values.md ? handleExpandClick : handleModalOpen}
       >
@@ -132,7 +131,7 @@ function ImageCard(props) {
         </CardContent>
         {/* button */}
         <CardActions disableSpacing sx={{
-          display:{xs: 'flex', md: 'none'},
+          display: { xs: 'flex', md: 'none' },
           justifyContent: 'flex-end',
         }}>
           <IconButton
@@ -153,7 +152,7 @@ function ImageCard(props) {
           </IconButton>
         </CardActions>
       </CardActionArea>
-      <DescriptionModal open={modalOpen} onClose={handleModalClose} title={props.title} image={props.image} description={props.children}/>
+      <DescriptionModal open={modalOpen} onClose={handleModalClose} title={props.title} image={props.image} description={props.children} />
       <Collapse in={expanded} timeout="auto" keepMounted>
         <CardContent onClick={handleExpandClick} >
           <Typography paragraph>
@@ -181,19 +180,20 @@ function ImageCardList(props) {
         border: 1,
         marginTop: '1rem',
         marginBottom: '2rem',
-      }}/>
+      }} />
       <Box>
-        <Masonry columns={{ xs: 1, sm: 2, md: 3 }} spacing={{ xs: 0, sm: 5}}>
-          {props.data
-          .filter((food) => food.category === props.category)
-          .map((food) => {
-            return (
-              <ImageCard title={food.title} image={Image(food.image)} key={food.title}>
-                {food.description}
-              </ImageCard>
-            )
+        <Masonry columns={{ xs: 1, sm: 2, md: 3 }} spacing={5} width='auto'>
+          {
+            props.data
+              .filter((food) => food.category === props.category)
+              .map((food) => {
+                return (
+                  <ImageCard title={food.title} image={Image(food.image)} key={food.title}>
+                    {food.description}
+                  </ImageCard>
+                )
+              })
           }
-          )}
         </Masonry>
       </Box>
     </>
@@ -214,7 +214,7 @@ function Food() {
       <Box padding={4} bgcolor='background.paper'>
         {categories.map((category) => {
           return (
-            <ImageCardList data={data} category={category}/>
+            <ImageCardList data={data} category={category} />
           )
         })}
       </Box>
