@@ -19,6 +19,7 @@ function StaticBackgroundBox(props) {
     <Grid
       container
       color={'text.primary'}
+      alignItems='stretch'
     >
       <Grid xs={12} md={7} order={{ xs: 2, md: props.imagePosition === 'left'? 1 : 3}} minHeight={'100vh'}
         sx={{
@@ -30,7 +31,7 @@ function StaticBackgroundBox(props) {
         }}
       >
       </Grid>
-      <Grid xs={12} md padding={5} bgcolor={'background.paper'} height={'100%'} order={{ xs: 1, md: 2}}>
+      <Grid xs={12} md padding={5} bgcolor={'background.paper'} order={{ xs: 1, md: 2}}>
         <Typography variant='h4'>
           {props.title}
         </Typography>
@@ -47,8 +48,6 @@ function StaticBackgroundBox(props) {
     </Grid>
   );
 }
-
-
 
 function Home() {
 

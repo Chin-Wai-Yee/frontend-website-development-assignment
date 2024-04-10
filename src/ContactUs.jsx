@@ -119,7 +119,7 @@ function ContactUs() {
           </Grid>
         </Grid>
       </TitleBoxWithBackground>
-      <Box width='100%'>
+      <Box width='100%' bgcolor='background.paper'>
         <Grid container width='100%' spacing={6} padding={4}>
           <Grid item md>
             <Typography variant='h2' marginBottom='2rem'>

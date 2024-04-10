@@ -61,7 +61,7 @@ function Game() {
           Traditional Game in Malaysia
         </Typography>
       </TitleBoxWithBackground>
-      <Stack maxWidth='100%' padding={4}>
+      <Stack maxWidth='100%' padding={4} bgcolor='background.paper'>
         {
           gameData.map((game) => {
             return (

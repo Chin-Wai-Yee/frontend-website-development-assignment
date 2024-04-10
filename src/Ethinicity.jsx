@@ -22,7 +22,7 @@ function Ethinicity() {
         </Typography>
       </TitleBoxWithBackground>
       
-      <Stack spacing={5} padding={4}>
+      <Stack spacing={5} padding={4} bgcolor='background.paper'>
         {data.map((ethnic) => {
           return (
             <ImageWithText image={Image(ethnic.image)} title={ethnic.ethnic}>
