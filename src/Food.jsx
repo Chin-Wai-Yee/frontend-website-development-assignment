@@ -183,7 +183,7 @@ function ImageCardList(props) {
         marginBottom: '2rem',
       }}/>
       <Box>
-        <Masonry columns={{ xs: 1, sm: 2, md: 3 }} spacing={5}>
+        <Masonry columns={{ xs: 1, sm: 2, md: 3 }} spacing={{ xs: 0, sm: 5}}>
           {props.data
           .filter((food) => food.category === props.category)
           .map((food) => {
@@ -211,7 +211,7 @@ function Food() {
           Traditional Food in Malaysia
         </Typography>
       </TitleBoxWithBackground>
-      <Box padding={4}>
+      <Box padding={4} bgcolor='background.paper'>
         {categories.map((category) => {
           return (
             <ImageCardList data={data} category={category}/>

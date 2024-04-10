@@ -6,6 +6,7 @@ import TitleBoxWithBackground from './reuseComponent/TitleBoxWithBackground';
 import ImageWithText from './reuseComponent/ImageWithText';
 import Typography from '@mui/material/Typography';
 import Stack from '@mui/material/Stack';
+import Box from '@mui/material/Box';
 
 import cultureData from './data/cultures.json';
 
@@ -15,43 +16,45 @@ function Culture() {
   const races = ['Chinese', 'Indian', 'Malay']
 
   return (
-    <div>
+    <>
       <TitleBoxWithBackground background={cultureBackground}>
         <Typography variant='h2' textAlign='center'>
           Culture in Malaysia
         </Typography>
       </TitleBoxWithBackground>
-      {
-        races.map((race) => {
-          return (
-            <>
-              <Typography variant='h3' marginBottom='1rem' padding={4}>
-                {race}
-              </Typography>
-              <Stack spacing={6} marginBottom='0.5rem'>
-                {
-                  cultureData
-                    .filter((culture) => {
-                      return culture.category === race;
-                    })
-                    .map((culture, index) => {
-                      return (
-                        <ImageWithText
-                          image={require(`${culture.image}`)}
-                          title={culture.name}
-                          imageOnRight={index % 2 === 1 ? true : false}
-                        >
-                          {culture.description}
-                        </ImageWithText>
-                      );
-                    })
-                }
-              </Stack>
-            </>
-          )
-        })
-      }
-    </div>
+      <Box bgcolor='background.paper'>
+        {
+          races.map((race) => {
+            return (
+              <>
+                <Typography variant='h3' marginBottom='1rem' padding={4}>
+                  {race}
+                </Typography>
+                <Stack spacing={6} marginBottom='0.5rem'>
+                  {
+                    cultureData
+                      .filter((culture) => {
+                        return culture.category === race;
+                      })
+                      .map((culture, index) => {
+                        return (
+                          <ImageWithText
+                            image={require(`${culture.image}`)}
+                            title={culture.name}
+                            imageOnRight={index % 2 === 1 ? true : false}
+                          >
+                            {culture.description}
+                          </ImageWithText>
+                        );
+                      })
+                  }
+                </Stack>
+              </>
+            )
+          })
+        }
+      </Box>
+    </>
   );
 };
 
