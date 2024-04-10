@@ -15,15 +15,6 @@ function ScrollTopButton(props) {
   const handleClick = (event) => {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
-    // const anchor = (event.target.ownerDocument || document).querySelector(
-    //   '#back-to-top-anchor',
-    // );
-
-    // if (anchor) {
-    //   anchor.scrollIntoView({
-    //     block: 'center',
-    //   });
-    // }
   };
 
   return (
@@ -31,7 +22,7 @@ function ScrollTopButton(props) {
       <Box
         onClick={handleClick}
         role="presentation"
-        sx={{ position: 'fixed', bottom: 16, right: 16 }}
+        sx={{ position: 'fixed', bottom: 16, right: 16 , zIndex: 9999}}
       >
         <Fab size="small" aria-label="scroll back to top">
           <KeyboardArrowUpIcon />

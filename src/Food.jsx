@@ -21,7 +21,7 @@ import Grid from '@mui/material/Unstable_Grid2';
 import Stack from '@mui/material/Stack';
 import Divider from '@mui/material/Divider';
 import { useTheme } from '@mui/material/styles';
-import useWindowDimensions from './reuseComponent/useWindowDimensions';
+import useWindowWidth from './reuseComponent/useWindowWidth';
 
 function DescriptionModal(props) {
 
@@ -66,9 +66,9 @@ function DescriptionModal(props) {
                 {props.title}
               </Typography>
             </Stack>
-            {props.description.map((paragraph) => {
+            {props.description.map((paragraph, index) => {
               return (
-                <Typography variant='body1' textAlign='justify' marginBottom='1rem'>
+                <Typography variant='body1' textAlign='justify' marginBottom='1rem' key={props.title + index}>
                   {paragraph}
                 </Typography>
               );
@@ -103,7 +103,7 @@ function ImageCard(props) {
   };
 
   const theme = useTheme();
-  const { height, width } = useWindowDimensions();
+  const width = useWindowWidth();
 
   return (
     <Card
@@ -130,13 +130,17 @@ function ImageCard(props) {
           </Typography>
         </CardContent>
         {/* button */}
-        <CardActions disableSpacing sx={{
-          display: { xs: 'flex', md: 'none' },
-          justifyContent: 'flex-end',
-        }}>
-          <IconButton
-            aria-expanded={expanded}
-            aria-label={expanded ? 'show less' : 'show more'}
+        <CardActions disableSpacing
+          aria-expanded={expanded}
+          aria-label={expanded ? 'show less' : 'show more'}
+          sx={{
+            display: { xs: 'flex', md: 'none' },
+            justifyContent: 'flex-end',
+          }}
+        >
+          <Box
+            display='flex'
+            alignItems='center'
           >
             <Typography variant="h6" color="text.secondary">
               {expanded ? 'Show Less' : 'Show More'}
@@ -149,21 +153,21 @@ function ImageCard(props) {
                 duration: 'transition.duration.shortest',
               }}
             />
-          </IconButton>
+          </Box>
         </CardActions>
       </CardActionArea>
       <DescriptionModal open={modalOpen} onClose={handleModalClose} title={props.title} image={props.image} description={props.children} />
-      <Collapse in={expanded} timeout="auto" keepMounted>
+      <Collapse in={expanded} timeout="auto">
         <CardContent onClick={handleExpandClick} >
-          <Typography paragraph>
-            {props.children.map((paragraph) => {
+          <Box>
+            {props.children.map((paragraph, index) => {
               return (
-                <Typography variant='body1' paragraph='true' textAlign='justify'>
+                <Typography variant='body1' paragraph={true} textAlign='justify' key={props.title + 'card'+ index}>
                   {paragraph}
                 </Typography>
               )
             })}
-          </Typography>
+          </Box>
         </CardContent>
       </Collapse>
     </Card>
@@ -181,8 +185,11 @@ function ImageCardList(props) {
         marginTop: '1rem',
         marginBottom: '2rem',
       }} />
-      <Box>
-        <Masonry columns={{ xs: 1, sm: 2, md: 3 }} spacing={5} width='auto'>
+      <Box 
+        width='100%'
+        marginLeft={2.5}
+      >
+        <Masonry columns={{ xs: 1, sm: 2, md: 3 }} spacing={5} width='auto' overflow='hidden'>
           {
             props.data
               .filter((food) => food.category === props.category)
@@ -211,10 +218,10 @@ function Food() {
           Traditional Food in Malaysia
         </Typography>
       </TitleBoxWithBackground>
-      <Box padding={4} bgcolor='background.paper'>
+      <Box paddingY={4} paddingX={3} bgcolor='background.paper'>
         {categories.map((category) => {
           return (
-            <ImageCardList data={data} category={category} />
+            <ImageCardList data={data} category={category} key={category}/>
           )
         })}
       </Box>
