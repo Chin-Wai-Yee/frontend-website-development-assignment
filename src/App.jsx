@@ -14,17 +14,41 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 const route = [
   {
-    Component: Layout,
+    element: <Layout />,
+    errorElement: <NotFound />,
     children: [
-      { path: "/", Component: Home },
-      { path: "/about", Component: About },
-      { path: "/ethnicity", Component: Ethnicity },
-      { path: "/games", Component: Games },
-      { path: "/food", Component: Food },
-      { path: "/culture", Component: Culture },
-      { path: "/contact-us", Component: ContactUs },
-      { path: "/login", Component: SignInSide },
-      { path: "*", Component: NotFound },
+      {
+        path: "/",
+        element: <Home />
+      },
+      {
+        path: "/about",
+        element: <About />
+      },
+      {
+        path: "/ethnicity",
+        element: <Ethnicity />
+      },
+      {
+        path: "/games",
+        element: <Games />
+      },
+      {
+        path: "/food",
+        element: <Food />
+      },
+      {
+        path: "/culture",
+        element: <Culture />
+      },
+      {
+        path: "/contact-us",
+        element: <ContactUs />
+      },
+      {
+        path: "/login",
+        element: <SignInSide />
+      },
     ],
   },
 ]
@@ -35,21 +59,6 @@ const router = createBrowserRouter(
     basename: process.env.PUBLIC_URL,
   }
 );
-
-// function Root () {
-//   return (
-//     <Routes>
-//         <Route path="about" element={<About />} />
-//         <Route path="ethnicity" element={<Ethnicity />} />
-//         <Route path="games" element={<Games />} />
-//         <Route path="food" element={<Food />} />
-//         <Route path="culture" element={<Culture />} />
-//         <Route path="contact-us" element={<ContactUs />} />
-//         <Route path="login" element={<SignInSide />}/>
-//       <Route path="*" element={<NotFound />} />
-//     </Routes>
-//   )
-// }
 
 function App() {
   
