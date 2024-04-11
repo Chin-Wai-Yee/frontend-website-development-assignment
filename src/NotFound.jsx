@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState, useRef, useEffect} from 'react';
+import { useState , useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
@@ -12,7 +12,7 @@ import blahBlahGoat from './images/notFound/blah-blah-goat.gif';
 import meowCat from './images/notFound/meow-cat.gif';
 import headacheCat from './images/notFound/headache-cat.gif';
 
-export function useCountdown(seconds, onEnd) {
+function useCountdown(seconds, onEnd) {
   let [remaining, setRemaining] = React.useState(seconds);
 
   React.useEffect(() => {
@@ -28,7 +28,7 @@ export function useCountdown(seconds, onEnd) {
     }
 
     return () => clearInterval(countdown);
-  }, [remaining]);
+  }, [remaining, onEnd]);
 
   return remaining;
 }
@@ -36,9 +36,13 @@ export function useCountdown(seconds, onEnd) {
 function NotFoundContent(props) {
   const navigate = useNavigate();
   const [count, setCount] = useState(0);
-  const onCountdownEnd = () => {
-    return navigate('/');
-  }
+  const onCountdownEnd = useCallback(
+    () => {
+      return navigate('/');
+    },
+    [navigate]
+  );
+
   let message = "";
   if (count === 5) {
     message = "You try to resist the force pulling you back to the main menu, but it's too strong!";
