@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/fwd-react-flask-test/static/css/main.06f7b1b4.css",
-    "main.js": "/fwd-react-flask-test/static/js/main.26d70558.js",
+    "main.js": "/fwd-react-flask-test/static/js/main.9fb7ff80.js",
     "static/media/meow-cat.gif": "/fwd-react-flask-test/static/media/meow-cat.b8e7216f246b307b1f91.gif",
     "static/media/bananaLeafRice.jpg": "/fwd-react-flask-test/static/media/bananaLeafRice.630d69e27b346cb4047d.jpg",
     "static/media/cat-judging.gif": "/fwd-react-flask-test/static/media/cat-judging.457955523a12fe605726.gif",
@@ -58,10 +58,10 @@
     "static/media/ceper.jpeg": "/fwd-react-flask-test/static/media/ceper.6ffeeb23ba1040a3a151.jpeg",
     "index.html": "/fwd-react-flask-test/index.html",
     "main.06f7b1b4.css.map": "/fwd-react-flask-test/static/css/main.06f7b1b4.css.map",
-    "main.26d70558.js.map": "/fwd-react-flask-test/static/js/main.26d70558.js.map"
+    "main.9fb7ff80.js.map": "/fwd-react-flask-test/static/js/main.9fb7ff80.js.map"
   },
   "entrypoints": [
     "static/css/main.06f7b1b4.css",
-    "static/js/main.26d70558.js"
+    "static/js/main.9fb7ff80.js"
   ]
 }
