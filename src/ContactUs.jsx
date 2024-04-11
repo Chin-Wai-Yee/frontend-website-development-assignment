@@ -1,7 +1,6 @@
 import React from 'react';
-import { redirect } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 import TitleBoxWithBackground from './reuseComponent/TitleBoxWithBackground';
-
 import backgroundImage from './images/contact-us/contact-us.jpg';
 import Grid from '@mui/material/Unstable_Grid2';
 import Box from '@mui/material/Box';
@@ -13,10 +12,10 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import MailIcon from '@mui/icons-material/Mail';
 import RecentActorsIcon from '@mui/icons-material/RecentActors';
 
-function handleSubmit(event) {
+function handleSubmit(event, navigate) {
   event.preventDefault();
   
-  alert("Form submitted");
+  alert("Form submitted, redirecting to home page...");
 
   var form = event.target;
   var fName = form.firstName.value;
@@ -36,10 +35,17 @@ function handleSubmit(event) {
   console.log(user);
 
   sessionStorage.setItem('user', JSON.stringify(user));
-  return redirect("/about");
+
+  return navigate("/");
 }
 
 function ContactUs() {
+
+  const navigate = useNavigate();
+
+  const handleFormClick = (event) => {
+    handleSubmit(event, navigate);
+  }
 
   const styles = {
 
@@ -138,7 +144,7 @@ function ContactUs() {
             <Typography variant='h4'>
               Please fill in this feeback form
             </Typography>
-            <form onSubmit={handleSubmit} id="myForm">
+            <form onSubmit={handleFormClick} id="myForm">
               <Grid container>
                 <Grid xs={12} md={6}>
                   <TextField
