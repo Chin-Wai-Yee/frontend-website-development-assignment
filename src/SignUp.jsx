@@ -43,7 +43,7 @@ function SignUp() {
         throw new Error('usrename already exists');
       }
       else {
-        navigate('/user/login');
+        navigate('/user/signin');
       }
     })
     .catch((error) => {
