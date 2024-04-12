@@ -22,7 +22,7 @@ function Culture() {
           Culture in Malaysia
         </Typography>
       </TitleBoxWithBackground>
-      <Box bgcolor='background.paper'>
+      <Box bgcolor='background.paper' padding={4}>
         {
           races.map((race) => {
             return (

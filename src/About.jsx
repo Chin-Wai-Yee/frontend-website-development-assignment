@@ -4,6 +4,7 @@ import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
 import Stack from "@mui/material/Stack";
 import background from "./images/about/background1.jpg";
+import { LazyLoadComponent } from "react-lazy-load-image-component";
 
 const styles = {
   centerItems: {
@@ -19,7 +20,6 @@ const styles = {
 }
 
 function AboutSection({ title, children }) {
-
 
   return (
     <Box
@@ -93,16 +93,18 @@ function About() {
         </Typography>
       </AboutSection>
       <AboutSection title="Do check out our school's video!">
-        <iframe
-          src="https://www.youtube.com/embed/5l-EK-foMa8?si=tEbk9EKT5CLg1Y4R"
-          title="YouTube video player"
-          border={0}
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-picture"
-          referrerPolicy="strict-origin-when-cross-origin"
-          allowFullScreen
-          sx={styles.video}
-        >
-        </iframe>
+        <LazyLoadComponent>
+          <iframe
+            src="https://www.youtube.com/embed/5l-EK-foMa8?si=tEbk9EKT5CLg1Y4R"
+            title="YouTube video player"
+            border={0}
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-picture"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+            sx={styles.video}
+          >
+          </iframe>
+        </LazyLoadComponent>
       </AboutSection>
     </Stack>
   );

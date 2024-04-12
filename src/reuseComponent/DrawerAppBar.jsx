@@ -205,7 +205,7 @@ function DrawerAppBar(props) {
                 color="inherit"
                 aria-label="account"
                 component={Link}
-                to="/login"
+                to="/user/profile"
               >
                 <AccountCircleIcon />
               </IconButton>

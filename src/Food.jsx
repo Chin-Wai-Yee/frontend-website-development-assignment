@@ -1,7 +1,5 @@
 import data from './data/foods.json';
-
 import foodBackground from './images/foods/background.jpg';
-
 import React from 'react';
 import TitleBoxWithBackground from './reuseComponent/TitleBoxWithBackground';
 import Typography from '@mui/material/Typography';
