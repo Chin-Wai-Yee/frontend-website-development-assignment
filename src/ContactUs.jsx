@@ -11,40 +11,134 @@ import Button from '@mui/material/Button';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import MailIcon from '@mui/icons-material/Mail';
 import RecentActorsIcon from '@mui/icons-material/RecentActors';
+import { IMaskMixin } from 'react-imask';
 
-function handleSubmit(event, navigate) {
-  event.preventDefault();
+const MaskStyledInput = IMaskMixin(TextField);
+
+function FeedbackForm(props) {
   
-  alert("Form submitted, redirecting to home page...");
-
-  var form = event.target;
-  var fName = form.firstName.value;
-  var lName = form.lastName.value;
-  var phone = form.phone.value;
-  var email = form.email.value;
-  var message = form.message.value;
-
-  var user = {
-    "First Name": fName,
-    "Last Name": lName,
-    "phone": phone,
-    "email": email,
-    "message": message
-  };
-
-  console.log(user);
-
-  sessionStorage.setItem('user', JSON.stringify(user));
-
-  return navigate("/");
+  return (
+    <Box component="form" onSubmit={props.handleSubmit} id="myForm">
+      <Grid container>
+        <Grid xs={12} md={6}>
+          <TextField
+            fullWidth
+            id="firstName"
+            name="firstName"
+            label="First Name"
+            variant="outlined"
+            margin="normal"
+            helperText={props.errors.first_name}
+            required
+          />
+        </Grid>
+        <Grid xs={12} md={6}>
+          <TextField
+            fullWidth
+            id="lastName"
+            name="lastName"
+            label="Last Name"
+            variant="outlined"
+            margin="normal"
+            helperText={props.errors.last_name}
+            required
+          />
+        </Grid>
+        <Grid xs={12}>
+          <MaskStyledInput
+            mask="000-0000-000[0]"
+            unmask={true}
+            fullWidth
+            id="phone"
+            name="phone"
+            label="Contact Number"
+            variant="outlined"
+            margin="normal"
+            helperText={props.errors.phone}
+            required
+          />
+        </Grid>
+        <Grid xs={12}>
+          <TextField
+            fullWidth
+            id="email"
+            name="email"
+            label="Email"
+            type="email"
+            variant="outlined"
+            margin="normal"
+            helperText={props.errors.email}
+            required
+          />
+        </Grid>
+        <Grid xs={12}>
+          <TextField
+            fullWidth
+            id="message"
+            name="message"
+            label="Message"
+            variant="outlined"
+            margin="normal"
+            helperText={props.errors.message}
+            multiline
+            required
+          />
+        </Grid>
+        <Grid xs={12}>
+          <Box display='flex' justifyContent='center'>
+            <Button type='submit' variant='contained' color='primary'>
+              Submit Feedback
+            </Button>
+          </Box>
+        </Grid>
+      </Grid>
+    </Box>
+  );
 }
 
 function ContactUs() {
 
   const navigate = useNavigate();
+  const [errors, setErrors] = React.useState({});
 
-  const handleFormClick = (event) => {
-    handleSubmit(event, navigate);
+  function handleSubmit(event, navigate, setErrors) {
+    event.preventDefault();
+    
+    var form = event.target;
+    var fName = form.firstName.value;
+    var lName = form.lastName.value;
+    var phone = form.phone.value.replace(/-/g, '');
+    var email = form.email.value;
+    var message = form.message.value;
+  
+    var user = {
+      "first_name": fName,
+      "last_name": lName,
+      "phone": phone,
+      "email": email,
+      "message": message
+    };
+
+    fetch('/feedback', {
+      method: 'POST',
+      headers: {
+        'Content-type': 'application/json; charset=UTF-8',
+      },
+      body: JSON.stringify(user),
+    })
+    .then(response => response.json())
+    .then(data => {
+      console.log('Success:', data);
+    })
+    
+    sessionStorage.setItem('user', JSON.stringify(user));
+    alert("Feedback submitted successfully! Redirecting to home page.");
+  
+    return navigate("/");
+  }
+
+  const handleFormSubmit = (event) => {
+    handleSubmit(event, navigate, setErrors);
   }
 
   const styles = {
@@ -144,74 +238,7 @@ function ContactUs() {
             <Typography variant='h4'>
               Please fill in this feeback form
             </Typography>
-            <form onSubmit={handleFormClick} id="myForm">
-              <Grid container>
-                <Grid xs={12} md={6}>
-                  <TextField
-                    fullWidth
-                    id="firstName"
-                    name="firstName"
-                    label="First Name"
-                    variant="outlined"
-                    margin="normal"
-                    required
-                  />
-                </Grid>
-                <Grid xs={12} md={6}>
-                  <TextField
-                    fullWidth
-                    id="lastName"
-                    name="lastName"
-                    label="Last Name"
-                    variant="outlined"
-                    margin="normal"
-                    required
-                  />
-                </Grid>
-                <Grid xs={12}>
-                  <TextField
-                    fullWidth
-                    id="phone"
-                    name="phone"
-                    label="Contact Number"
-                    variant="outlined"
-                    margin="normal"
-                    required
-                  />
-                </Grid>
-                <Grid xs={12}>
-                  <TextField
-                    fullWidth
-                    id="email"
-                    name="email"
-                    label="Email"
-                    type="email"
-                    variant="outlined"
-                    margin="normal"
-                    required
-                  />
-                </Grid>
-                <Grid xs={12}>
-                  <TextField
-                    fullWidth
-                    id="message"
-                    name="message"
-                    label="Message"
-                    variant="outlined"
-                    margin="normal"
-                    multiline
-                    required
-                  />
-                </Grid>
-                <Grid xs={12}>
-                  <Box display='flex' justifyContent='center'>
-                    <Button type='submit' variant='contained' color='primary'>
-                      Submit Feedback
-                    </Button>
-                  </Box>
-                </Grid>
-              </Grid>
-            </form>
+            <FeedbackForm handleSubmit={handleFormSubmit} errors={errors}/>
           </Grid>
         </Grid>
       </Box>

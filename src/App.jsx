@@ -10,6 +10,9 @@ import Culture from "./Culture";
 import ContactUs from "./ContactUs";
 import NotFound from "./NotFound";
 import SignInSide from "./SignInSide";
+import SignIn from "./SignIn";
+import SignUp from "./SignUp";
+import Profile from "./Profile";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 const route = [
@@ -46,8 +49,26 @@ const route = [
         element: <ContactUs />
       },
       {
-        path: "/login",
-        element: <SignInSide />
+        path: "/user/",
+        children: [
+          {
+            element: <SignInSide />,
+            children: [
+              {
+                path: "signin",
+                element: <SignIn />
+              },
+              {
+                path: "signup",
+                element: <SignUp />
+              }
+            ]
+          },
+          {
+            path: "profile",
+            element: <Profile />
+          }
+        ]
       },
     ],
   },
