@@ -1,7 +1,6 @@
 # Import flask and datetime module for showing date and time
 from flask import Flask, render_template, redirect, request, session, make_response, jsonify, send_from_directory
 from flask_cors import CORS
-import json
 from flask_bcrypt import Bcrypt
 from config import ApplicationConfig
 from model import db, User, Feedback
@@ -84,27 +83,6 @@ def get_user():
     return make_response(jsonify(response), 404)
     # return make_response("User not found!", 404)
 
-# @app.route("/user/<uuid>", methods=["PUT"])
-# def update_user(uuid):
-#     user = User.query.filter_by(uuid=uuid).first()
-#     if user:
-#         user.username = request.json.get("username")
-#         user.userFullName = request.json.get("userFullName")
-#         user.email = request.json.get("email")
-#         user.password = bcrypt.generate_password_hash(request.json.get("password")).decode("utf-8")
-#         db.session.commit()
-#         return make_response("User updated!", 200)
-#     return make_response("User not found!", 404)
-
-# @app.route("/user/<uuid>", methods=["DELETE"])
-# def delete_user(uuid):
-#     user = User.query.filter_by(uuid=uuid).first()
-#     if user:
-#         db.session.delete(user)
-#         db.session.commit()
-#         return make_response("User deleted!", 200)
-#     return make_response("User not found!", 404)
-
 @app.route("/login", methods=["POST"])
 def login():
     username = request.json.get("username")
@@ -146,17 +124,6 @@ def feedback():
     db.session.commit()
 
     return make_response("Feedback submitted!", 201)
-
-@app.route("/feedbacks", methods=["GET"])
-def get_feedbacks():
-    # Check if the user is admin
-    if "username" not in session:
-        return make_response("Unauthorized!", 401)
-    if not User.query.filter_by(username=session["username"]).first().is_admin:
-        return make_response("Unauthorized!", 401)
-
-    feedbacks = Feedback.query.all()
-    return jsonify([feedback.to_dict() for feedback in feedbacks])
 
 # Catch all routes and return index.html
 @app.route("/", defaults={"path": ""})
