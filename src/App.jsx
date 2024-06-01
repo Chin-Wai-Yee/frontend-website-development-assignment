@@ -75,10 +75,7 @@ const route = [
 ]
 
 const router = createHashRouter(
-  route,
-  {
-    basename: process.env.PUBLIC_URL,
-  }
+  route
 );
 
 function App() {
