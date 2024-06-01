@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/fwd-react-flask-test/static/js/main.99edc6fd.js",
+    "main.js": "/fwd-react-flask-test/static/js/main.4a0a7353.js",
     "static/media/background1.jpg": "/fwd-react-flask-test/static/media/background1.85b4aba2d2dc30f8361a.jpg",
     "static/media/meow-cat.gif": "/fwd-react-flask-test/static/media/meow-cat.b8e7216f246b307b1f91.gif",
     "static/media/bananaLeafRice.jpg": "/fwd-react-flask-test/static/media/bananaLeafRice.630d69e27b346cb4047d.jpg",
@@ -57,9 +57,9 @@
     "static/media/bakKutTeh.jpeg": "/fwd-react-flask-test/static/media/bakKutTeh.7e0d38b7df109ca96777.jpeg",
     "static/media/ceper.jpeg": "/fwd-react-flask-test/static/media/ceper.6ffeeb23ba1040a3a151.jpeg",
     "index.html": "/fwd-react-flask-test/index.html",
-    "main.99edc6fd.js.map": "/fwd-react-flask-test/static/js/main.99edc6fd.js.map"
+    "main.4a0a7353.js.map": "/fwd-react-flask-test/static/js/main.4a0a7353.js.map"
   },
   "entrypoints": [
-    "static/js/main.99edc6fd.js"
+    "static/js/main.4a0a7353.js"
   ]
 }
