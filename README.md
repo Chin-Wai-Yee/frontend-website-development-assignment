@@ -28,5 +28,9 @@ npm start build-localhost
      Food page
   </h3>
     <img src="screenshot/food.gif">
+  <h3 >
+      Contact us page
+  </h3>
+    <img src="screenshot/contact.gif">
   
 </div>
