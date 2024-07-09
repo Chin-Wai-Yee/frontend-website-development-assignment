@@ -118,20 +118,19 @@ function ContactUs() {
       "email": email,
       "message": message
     };
-
-    fetch('/feedback', {
-      method: 'POST',
-      headers: {
-        'Content-type': 'application/json; charset=UTF-8',
-      },
-      body: JSON.stringify(user),
-    })
-    .then(response => response.json())
-    .then(data => {
-      console.log('Success:', data);
-    })
     
-    sessionStorage.setItem('user', JSON.stringify(user));
+    let user_feedbacks = sessionStorage.getItem('user_feedbacks');
+
+    if (user_feedbacks) {
+      user_feedbacks = JSON.parse(user_feedbacks);
+      user_feedbacks = [...user_feedbacks, user];
+      sessionStorage.setItem('user_feedbacks', JSON.stringify(user_feedbacks));
+    }
+    else {
+      user_feedbacks = [user];
+      sessionStorage.setItem('user_feedbacks', JSON.stringify(user_feedbacks));
+    }
+
     alert("Feedback submitted successfully! Redirecting to home page.");
   
     return navigate("/");

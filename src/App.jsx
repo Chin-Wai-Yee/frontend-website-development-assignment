@@ -13,7 +13,7 @@ import SignInSide from "./SignInSide";
 import SignIn from "./SignIn";
 import SignUp from "./SignUp";
 import Profile from "./Profile";
-import { RouterProvider, createHashRouter } from "react-router-dom";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 const route = [
   {
@@ -74,9 +74,7 @@ const route = [
   },
 ]
 
-const router = createHashRouter(
-  route
-);
+const router = createBrowserRouter(route, { basename: "/frontend-website-development-assignment" });
 
 function App() {
   
