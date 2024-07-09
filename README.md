@@ -15,11 +15,18 @@ npm start build-localhost
 5. Enjoy!
 
 
-Sreenshot of our Webpages 😜
-
+The sample webpages of our Webpages as shown below 😜
+hope you all like our website ❤️
 <div align="center">
   <h3 >
      Home page
   </h3>
   <img src="screenshot/home.gif">
+  <br>
+  <br>
+  <h3 >
+     Food page
+  </h3>
+    <img src="screenshot/food.gif">
+  
 </div>
