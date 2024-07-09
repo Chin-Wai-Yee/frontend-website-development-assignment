@@ -18,6 +18,5 @@ npm start build-localhost
 Sreenshot of our Webpages 😜
 
 <div align="center">
-  ![Screenshot 2024-07-09 195727](https://github.com/YongShen0508/frontend-website-development-assignment/assets/96345247/0e6b0a6e-5e3e-483b-b495-5311c48883b8)
-
+  <img src="https://github.com/YongShen0508/frontend-website-development-assignment/assets/96345247/0e6b0a6e-5e3e-483b-b495-5311c48883b8">
 </div>
