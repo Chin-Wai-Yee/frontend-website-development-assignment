@@ -18,5 +18,8 @@ npm start build-localhost
 Sreenshot of our Webpages 😜
 
 <div align="center">
+  <p>
+     ###Home page
+  </p>
   <img src="screenshot/home.gif">
 </div>
