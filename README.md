@@ -24,4 +24,4 @@ Sreenshot of our Webpages 😜
 
 
 
-![Recording2024-07-09200750-ezgif com-video-to-gif-converter](https://github.com/YongShen0508/frontend-website-development-assignment/assets/96345247/a2e5e0cd-a21a-4175-9bbd-05e796c661b5)
+![video](https://github.com/YongShen0508/frontend-website-development-assignment/assets/96345247/a2e5e0cd-a21a-4175-9bbd-05e796c661b5)
