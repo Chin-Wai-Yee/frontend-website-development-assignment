@@ -15,7 +15,7 @@ npm start build-localhost
 5. Enjoy!
 
 
-### The sample webpages of our Webpages as shown below 😜 \
+### The sample webpages of our Webpages as shown below 😜 
 ### hope you all like our website ❤️
 <div align="center">
   <h3 >
